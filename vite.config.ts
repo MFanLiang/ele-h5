@@ -46,9 +46,9 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       preprocessorOptions: {
         scss: {
           // 引入 mixin.scss，在项目全局下使用 mixin 样式规则
-          additionalData: '@import "@/assets/style/mixin.scss";'
-        }
-      }
-    }
+          additionalData: '@import "@/assets/style/mixin.scss";',
+        },
+      },
+    },
   };
 });
