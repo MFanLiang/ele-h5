@@ -18,5 +18,6 @@ export const useUserStore = defineStore('user', {
     setUserInfo(userInfo: UserState['userInfo']) {
       this.userInfo = { ...this.userInfo, ...userInfo }
     }
-  }
+  },
+  persist: true
 })
