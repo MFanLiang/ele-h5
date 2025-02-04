@@ -1,15 +1,14 @@
-<script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import { useUserStore } from '@store/modules/user';
-
-const userStore = useUserStore()
-const { userInfo, token } = storeToRefs(userStore)
-console.log('userInfo :>> ', userInfo);
-console.log('token :>> ', token);
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>首页</div>
+  <div>
+    首页
+    <div class="tex">我反扒额计日工工作日</div>
+  </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.tex {
+  font-size: 39px;
+}
+</style>
