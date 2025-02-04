@@ -3,9 +3,11 @@ import 'normalize.css'; // 引入并使用 css 样式重置初始化插件
 // import './style.css';
 import 'vant/lib/index.css';
 import router from '@/router/index';
+import store from '@store';
 import App from './App.vue';
 
 const app = createApp(App);
 
 app.use(router);
+app.use(store);
 app.mount('#app');

@@ -33,13 +33,13 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       // https: false,
       open: true,
       // 本地跨域代理 https://cn.vitejs.dev/config/server-options.html#server-proxy
-      // proxy: {
-      //   '^/api': {
-      //     target: 'http://192.168.1.4:8688',
-      //     changeOrigin: true,
-      //     rewrite: path => path.replace(/^\/api/, ''),
-      //   },
-      // },
+      proxy: {
+        '^/api': {
+          target: 'http://192.168.3.5:5050',
+          changeOrigin: true,
+          rewrite: path => path.replace(/^\/api/, ''),
+        },
+      },
     },
     css: {
       // 启用 css 预处理器
